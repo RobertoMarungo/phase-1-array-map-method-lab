@@ -13,13 +13,13 @@ const tutorials = [
 
 const titleCased = () => {
     return tutorials.map((sentence) => {
-        const word = sentence.split(" ");
+        const words = sentence.split(" ");
 
-        const capitalizedWord = word.map(
+        const capitalizedWords = words.map(
             (word) => word[0].toUpperCase() + word.slice(1)
         );
 
-        const result = capitalizedWord.join(" ");
+        const result = capitalizedWords.join(" ");
 
         return result;
     });
